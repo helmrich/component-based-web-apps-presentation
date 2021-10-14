@@ -1,2 +1,2 @@
-# component-based-web-apps-presentation
-This repository contains code examples and an example project for our presentation in  the lecture "Spezielle Themen für Web-Anwendungen" (Special Topics for Web Applications) @HdM Stuttgart.
+# Component-based Web Apps Presentation
+This repository contains code examples and an example project for our presentation in  the lecture "Spezielle Themen für Web-Anwendungen" (Special Topics for Web Applications) @ HdM Stuttgart where we talk about creating component-based web applications using [Storybook](https://github.com/storybookjs/storybook) and [Styled Components](https://github.com/styled-components/styled-components).
