@@ -1,12 +1,23 @@
 import React from 'react';
-import Test from './components/Test';
+import Switcher from './components/Switcher';
+import RedText from './components/TextWithColor';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <Test />
+      <Switcher.Wrapper>
+        <Switcher.Component name="One">
+          <RedText>One</RedText>
+        </Switcher.Component>
+        <Switcher.Component name="Two">
+          <RedText>Two</RedText>
+        </Switcher.Component>
+        <Switcher.Component name="Three">
+          <RedText>Three</RedText>
+        </Switcher.Component>
+      </Switcher.Wrapper>
     </div>
   );
-}
+};
 
 export default App;
