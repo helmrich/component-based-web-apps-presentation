@@ -4,10 +4,12 @@ import Button, { ButtonProps } from '../components/Button/Button';
 // In den default export-Metadaten konfiguriert man, wie
 // Storybook die Stories auflistet und stellt Informationen
 // bereit, die von Addons genutzt werden können
-export default {
+const meta: Meta = {
   title: 'Button',
   component: Button,
-} as Meta;
+};
+
+export default meta;
 
 /**
  * Ohne args
