@@ -1,11 +1,11 @@
 import { Meta, Story } from '@storybook/react';
-import Button, { ButtonProps } from '../components/Button/Button';
+import Button, { ButtonProps } from './Button';
 
 // In den default export-Metadaten konfiguriert man, wie
 // Storybook die Stories auflistet und stellt Informationen
 // bereit, die von Addons genutzt werden können
 const meta: Meta = {
-  title: 'Button',
+  title: 'Controls/Button',
   component: Button,
 };
 
@@ -15,15 +15,7 @@ export default meta;
  * Ohne args
  * */
 // export const Primary = () => (
-//   <Button
-//     text="Click Me!"
-//     fontSize={16}
-//     backgroundColor="#96c7c1"
-//     color="white"
-//     borderRadius={4}
-//     paddingHorizontal={24}
-//     paddingVertical={12}
-//   />
+//   <Button text="Click Me!" variant="primary" size="medium" />
 // );
 
 /**
@@ -32,7 +24,9 @@ export default meta;
 
 // Mit diesem Template legt man fest, wie die args gerendert
 // werden sollen
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => (
+  <Button {...args}>Click Me!</Button>
+);
 
 // Mit den named exports in einer CSF-Datei legt
 // man die Stories einer Komponente fest
@@ -41,13 +35,8 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 // Code-Duplizierung
 export const Primary = Template.bind({});
 Primary.args = {
-  text: 'Click Me!',
-  fontSize: 16,
-  backgroundColor: '#96c7c1',
-  color: 'white',
-  borderRadius: 4,
-  paddingHorizontal: 24,
-  paddingVertical: 12,
+  variant: 'primary',
+  size: 'medium',
 };
 
 // ...Primary.args destructured die args der Primary Story,
@@ -56,5 +45,5 @@ Primary.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
   ...Primary.args,
-  backgroundColor: '#b91646',
+  variant: 'secondary',
 };
