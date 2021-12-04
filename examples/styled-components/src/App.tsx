@@ -1,22 +1,18 @@
-import React from 'react';
-import Switcher from './components/Switcher';
-import RedText from './components/TextWithColor';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
+import GlobalStyle from './components/GlobalStyle';
+import Button from './components/Button';
+import Container from './components/Container';
 
 const App = () => {
   return (
-    <div>
-      <Switcher.Wrapper>
-        <Switcher.Component name="One">
-          <RedText>One</RedText>
-        </Switcher.Component>
-        <Switcher.Component name="Two">
-          <RedText>Two</RedText>
-        </Switcher.Component>
-        <Switcher.Component name="Three">
-          <RedText>Three</RedText>
-        </Switcher.Component>
-      </Switcher.Wrapper>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Container>
+        <Button>Primary</Button>
+        <Button variant="secondary">Secondary</Button>
+      </Container>
+    </ThemeProvider>
   );
 };
 
