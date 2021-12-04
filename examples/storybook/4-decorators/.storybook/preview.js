@@ -16,5 +16,6 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+    exclude: ['ref', 'theme', 'as', 'forwardedAs'],
   },
 };
