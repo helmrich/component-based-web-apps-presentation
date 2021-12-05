@@ -5,13 +5,12 @@ export type ButtonProps = {
 };
 
 const Button = styled.button<ButtonProps>`
-  background-color: ${({ variant = 'primary' }) =>
-    variant === 'primary' ? 'dodgerblue' : 'seagreen'};
-  color: white;
+  background-color: ${({ theme, variant = 'primary' }) =>
+    variant === 'primary' ? theme.colors.primary : theme.colors.secondary};
+  color: ${({ theme, variant = 'primary' }) =>
+    variant === 'primary' ? theme.colors.onPrimary : theme.colors.onSecondary};
   padding: 0.5rem 1rem;
-  border: 0;
   border-radius: 8px;
-  cursor: pointer;
 
   &:hover {
     filter: brightness(0.9);
