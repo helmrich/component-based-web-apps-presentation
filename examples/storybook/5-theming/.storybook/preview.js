@@ -39,4 +39,5 @@ export const parameters = {
     },
     exclude: ['ref', 'theme', 'as', 'forwardedAs'],
   },
+  backgrounds: { disable: true },
 };

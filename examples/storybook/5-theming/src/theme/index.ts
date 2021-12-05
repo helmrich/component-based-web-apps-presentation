@@ -1,14 +1,6 @@
 import Theme from './Theme';
 
-const base: Theme = {
-  colors: {
-    primary: 'dodgerblue',
-    secondary: 'seagreen',
-    background: 'white',
-    onPrimary: 'white',
-    onSecondary: 'white',
-    onBackground: 'black',
-  },
+const base: Omit<Theme, 'colors'> = {
   fonts: {
     primary: 'Inter, sans-serif',
   },
@@ -21,6 +13,14 @@ const base: Theme = {
 
 export const light: Theme = {
   ...base,
+  colors: {
+    primary: 'dodgerblue',
+    secondary: 'seagreen',
+    background: 'white',
+    onPrimary: 'white',
+    onSecondary: 'white',
+    onBackground: 'black',
+  },
 };
 
 export const dark: Theme = {

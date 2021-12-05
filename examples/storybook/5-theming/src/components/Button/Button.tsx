@@ -5,10 +5,10 @@ export type ButtonProps = {
 };
 
 const Button = styled.button<ButtonProps>`
-  background-color: ${({ theme, variant = 'primary' }) =>
-    variant === 'primary' ? theme.colors.primary : theme.colors.secondary};
-  color: ${({ theme, variant = 'primary' }) =>
-    variant === 'primary' ? theme.colors.onPrimary : theme.colors.onSecondary};
+  background-color: ${({ theme, variant }) =>
+    variant === 'secondary' ? theme.colors.secondary : theme.colors.primary};
+  color: ${({ theme, variant }) =>
+    variant === 'secondary' ? theme.colors.secondary : theme.colors.primary};
   padding: 0.5rem 1rem;
   border-radius: 8px;
 
