@@ -2,12 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-family: ${({ theme }) => theme.fonts.primary};
+    font-size: ${({ theme }) => theme.fontSizes.medium};
   }
 
   body {
-    background-color: white;
+    background-color: ${({ theme }) => theme.colors.background};
   }
 
   button {
