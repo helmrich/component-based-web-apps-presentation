@@ -13,7 +13,9 @@ const App = () => {
         {/* ========== BASICS - BASIC STYLING ========== */}
         <Button>Button</Button>
         {/* ========== BASICS - Extending Styles ========== */}
-        {/* <Button>Blue</Button>
+        {/* <Button as="a" href="#">
+          Blue
+        </Button>
         <ExtendedButton>Green</ExtendedButton> */}
         {/* ========== BASICS - ATTRIBUTES & THEMING ========== */}
         {/* <Button>Primary</Button>
