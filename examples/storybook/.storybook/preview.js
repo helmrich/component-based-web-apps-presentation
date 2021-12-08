@@ -7,12 +7,11 @@ export const globalTypes = {
     name: 'Theme',
     description: 'Styled Component theme',
     defaultValue: 'light',
-    toolbar: {
-      icon: 'mirror',
-      items: ['light', 'dark'],
-      showName: true,
-    },
-    active: false,
+    // toolbar: {
+    //   icon: 'mirror',
+    //   items: ['light', 'dark'],
+    //   showName: true,
+    // },
   },
 };
 
@@ -35,5 +34,5 @@ export const parameters = {
     sort: 'alpha',
     exclude: ['ref', 'theme', 'as', 'forwardedAs'],
   },
-  backgrounds: { disable: true },
+  // backgrounds: { disable: true },
 };

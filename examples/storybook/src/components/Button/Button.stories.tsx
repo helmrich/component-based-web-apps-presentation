@@ -3,14 +3,14 @@ import Button, { ButtonProps } from './Button';
 
 // =========== STORIES - STORIES =========== //
 
-// export default {
-//   title: 'Controls/Button',
-//   component: Button,
-// } as Meta<ButtonProps>;
+export default {
+  title: 'Controls/Button',
+  component: Button,
+} as Meta<ButtonProps>;
 
-// export const Primary: Story<ButtonProps> = (args) => (
-//   <Button {...args}>Button</Button>
-// );
+export const Primary: Story<ButtonProps> = (args) => (
+  <Button {...args}>Button</Button>
+);
 
 // =========== STORIES - TEMPLATE & ARGS =========== //
 
@@ -99,36 +99,64 @@ import Button, { ButtonProps } from './Button';
 
 // =========== STORIES - ACTIONS =========== //
 
-export default {
-  title: 'Controls/Button',
-  component: Button,
-  argTypes: {
-    children: {
-      name: 'label',
-    },
-    onClick: {
-      action: 'click',
-    },
-  },
-  args: {
-    children: 'Button',
-    size: 'medium',
-  },
-} as Meta<ButtonProps>;
+// export default {
+//   title: 'Controls/Button',
+//   component: Button,
+//   argTypes: {
+//     children: {
+//       name: 'label',
+//     },
+//     onClick: {
+//       action: 'click',
+//     },
+//   },
+//   args: {
+//     children: 'Button',
+//     size: 'medium',
+//   },
+// } as Meta<ButtonProps>;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+// const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  variant: 'primary',
-};
+// export const Primary = Template.bind({});
+// Primary.args = {
+//   variant: 'primary',
+// };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  variant: 'secondary',
-};
+// export const Secondary = Template.bind({});
+// Secondary.args = {
+//   variant: 'secondary',
+// };
 
-// =========== STORIES - DOCS =========== //
+// =========== STORIES - DOCS OHNE TABLE =========== //
+
+// export default {
+//   title: 'Controls/Button',
+//   component: Button,
+//   argTypes: {
+//     children: {
+//       name: 'label',
+//     },
+//   },
+//   args: {
+//     children: 'Button',
+//     size: 'medium',
+//   },
+// } as Meta<ButtonProps>;
+
+// const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+
+// export const Primary = Template.bind({});
+// Primary.args = {
+//   variant: 'primary',
+// };
+
+// export const Secondary = Template.bind({});
+// Secondary.args = {
+//   variant: 'secondary',
+// };
+
+// =========== STORIES - DOCS MIT TABLE =========== //
 
 // export default {
 //   title: 'Controls/Button',
