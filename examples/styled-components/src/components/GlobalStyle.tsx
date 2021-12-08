@@ -11,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     border: 0;
   }
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-family: Arial;
+  }
 `;
 
 export default GlobalStyle;
