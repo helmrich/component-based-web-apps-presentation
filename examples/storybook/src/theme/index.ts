@@ -9,6 +9,11 @@ const base: Omit<Theme, 'colors'> = {
     medium: '16px',
     large: '20px',
   },
+  shadows: {
+    low: '1px 3px 5px rgba(0, 0, 0, 0.1)',
+    medium: '2px 4px 6px rgba(0, 0, 0, 0.2)',
+    high: '3px 5px 7px rgba(0, 0, 0, 0.3)',
+  },
 };
 
 export const light: Theme = {

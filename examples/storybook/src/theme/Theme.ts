@@ -15,6 +15,11 @@ type Theme = {
     medium: string;
     large: string;
   };
+  shadows: {
+    low: string;
+    medium: string;
+    high: string;
+  };
 };
 
 export default Theme;
